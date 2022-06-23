@@ -21,11 +21,21 @@
 // }console.log(factorial(5,1))
 
 
-function digit(num,count){
-    if(num>0){
-        count++;
-        num = Math.floor(num/10);
-        return digit(num,count);
+// function digit(num,count){
+//     if(num>0){
+//         count++;
+//         num = Math.floor(num/10);
+//         return digit(num,count);
+//     }
+//     console.log(count);
+// }digit(457767,0)
+
+
+
+function reverse(num1,num2){
+    if(num1<=num2){
+        console.log(num2);
+        return reverse(num1,num2-1)
     }
-    console.log(count);
-}digit(457767,0)
+}
+reverse(1,20);
