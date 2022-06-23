@@ -11,11 +11,21 @@
 
 
 
-function factorial(num,fact){
+// function factorial(num,fact){
+//     if(num>0){
+//         fact*=num;
+//         return factorial(num-1,fact);
+//     }else{
+//         return fact;
+//     }
+// }console.log(factorial(5,1))
+
+
+function digit(num,count){
     if(num>0){
-        fact*=num;
-        return factorial(num-1,fact);
-    }else{
-        return fact;
+        count++;
+        num = Math.floor(num/10);
+        return digit(num,count);
     }
-}console.log(factorial(5,1))
+    console.log(count);
+}digit(457767,0)
